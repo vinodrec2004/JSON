@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+let txt = 
+[
+   {
+      "name":"Rajeev",
+      "age":21
+   },
+   {
+      "name":"naresh",
+      "age":22
+   },
+   {
+      "name":"dilip",
+      "age":23
+   },
+   {
+      "name":"ganesh",
+      "age":24
+   }
+]
+
+let txt1 = 
+{
+   "Rajeev":"Doctor",
+   "ganesh":"Actor",
+   "naresh":"artist",
+   "dilip":"developer"
+}
+
+const objectArray = Object.entries(txt1);// converting object in to array and key value pairs
+for(i=0; i<txt.length;i++)
+{
+    objectArray.forEach(([key, value]) => { 
+        if (key == txt[i].name) // comparing the name
+            {
+                txt[i].profession = value
+            }
+    });
+}
+   
+console.log(txt)
+</script>
+
+</body>
+</html>
